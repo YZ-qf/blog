@@ -1,0 +1,10 @@
+$(function(){
+    $.ajax({
+    type:"get",
+    url:"./test.md",
+    dataType:"html",
+    success:function(res){
+    $("#content").append(marked(res));
+    }
+    })
+    })
